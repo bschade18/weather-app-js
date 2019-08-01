@@ -16,6 +16,10 @@ if (navigator.geolocation) {
   }
 }
 
+window.onload = function() {
+  getLocation();
+};
+
 // get weather data based on the location
 function getWeather(lat, long) {
   const weatherURL = "https://fcc-weather-api.glitch.me/api/current?";
@@ -36,10 +40,6 @@ function updateDataToUI(location, weather, temp) {
   loc.innerHTML = location;
   temNum.innerHTML = `${temp}`;
 }
-
-window.onload = function() {
-  getLocation();
-};
 
 // change from C to F
 function cToF(celsius) {
