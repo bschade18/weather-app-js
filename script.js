@@ -1,9 +1,9 @@
 
-const loc = document.getElementById("location");
-const temNum = document.getElementById("temperature-num");
-const temScale = document.getElementById("temperature-scale");
-const weatherCon = document.getElementById("weather-condition");
-const weatherIcon = document.getElementById("weather-icon");
+let loc = document.getElementById("location");
+let temNum = document.getElementById("temperature-num");
+let temScale = document.getElementById("temperature-scale");
+let weatherCon = document.getElementById("weather-condition");
+let weatherIcon = document.getElementById("weather-icon");
 
 // get location
 function getLocation() {
