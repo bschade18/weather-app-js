@@ -5,8 +5,6 @@ const temScale = document.getElementById("temperature-scale");
 const weatherCon = document.getElementById("weather-condition");
 const weatherIcon = document.getElementById("weather-icon");
 
-temScale.addEventListener("click", toggleScale);
-
 // get location
 function getLocation() {
 if (navigator.geolocation) {
@@ -53,7 +51,7 @@ function fToC(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-function toggleScale() {
+temScale.addEventListener("click", function toggleScale() {
   if (temScale.innerHTML === "C") {
     temNum.innerHTML = cToF(temNum.innerHTML).toFixed(2);
     temScale.innerHTML = "F";
@@ -62,6 +60,7 @@ function toggleScale() {
     temScale.innerHTML = "C";
   }
 }
+);
 
 
 
