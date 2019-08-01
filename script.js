@@ -3,7 +3,9 @@ const loc = document.getElementById("location");
 const temNum = document.getElementById("temperature-num");
 const temScale = document.getElementById("temperature-scale");
 const weatherCon = document.getElementById("weather-condition");
-const weatherIcon = document.getElementById("weather-icon");  
+const weatherIcon = document.getElementById("weather-icon");
+
+temScale.addEventListener("click", toggleScale);
 
 // get location
 function getLocation() {
@@ -61,7 +63,6 @@ function toggleScale() {
   }
 }
 
-temScale.addEventListener("click", toggleScale);
 
 
   
