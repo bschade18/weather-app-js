@@ -51,16 +51,6 @@ function fToC(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
 
-temScale.addEventListener("click", function toggleScale() {
-  if (temScale.innerHTML === "C") {
-    temNum.innerHTML = cToF(temNum.innerHTML).toFixed(2);
-    temScale.innerHTML = "F";
-  } else if (temScale.innerHTML === 'F') {
-    temNum.innerHTML = fToC(temNum.innerHTML).toFixed(2);
-    temScale.innerHTML = "C";
-  }
-}
-);
 
 
 
