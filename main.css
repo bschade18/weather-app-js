@@ -1,0 +1,27 @@
+body {
+  background: #99bbff;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 220px;
+}
+
+#weather-icon {
+  position: relative;
+  top: 20px;
+}
+
+#title, .weather-info {
+  font-family: 'Nanum Gothic', sans-serif;
+}
